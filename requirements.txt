@@ -1,0 +1,5 @@
+fastapi==0.78.0
+loguru==0.6.0
+pydantic==1.9.1
+uvicorn[standard]==0.18.1
+webauthn==1.5.2

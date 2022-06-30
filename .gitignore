@@ -1,0 +1,4 @@
+env/
+**/ido_auth.egg-info/*
+/.idea/*
+**/*.log
