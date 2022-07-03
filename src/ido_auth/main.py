@@ -5,6 +5,7 @@ from fastapi import FastAPI
 from fastapi import Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
+from fastapi.staticfiles import StaticFiles
 from ido_auth.registration.exceptions import UnverifiedException
 from ido_auth.registration.routes import registration_app
 from loguru import logger
@@ -23,6 +24,8 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+app.mount("/static", StaticFiles(directory="static"), name="static")
 
 
 @app.exception_handler(UnverifiedException)

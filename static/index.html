@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ido Webauthn</title>
+  <script src="simplewebauthn-browser.5.2.1.umd.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div>
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username" value="Ido"/></p>
+    <button id="register">Register</button>
+    <p>Registered: <span id="registered"></span></p>
+    <button id="authenticate">Authenticate</button>
+    <p>Authenticated: <span id="authenticated"></span></p>
+  </div>
+</body>
+</html>
